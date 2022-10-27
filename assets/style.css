@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(10, 198, 245, 0.5),rgba(10, 198, 245, 0.5)), url(/assets/pexels-daniel-frank-305568.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 11px 5px -3px rgba(0,0,0,0.29);
+  -webkit-box-shadow: 0px 11px 5px -3px rgba(0,0,0,0.29);
+  -moz-box-shadow: 0px 11px 5px -3px rgba(0,0,0,0.29);
+
+}
+
+.logo {
+  width: 240px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.sidebar {
+  
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a7d1;
+
+}
+
+nav ul li a{
+  display:flex;
+  flex-direction: column;
+  margin: 25px;
+  padding-bottom: 20px;
+  bottom: 25px;
+  position: relative;  
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+nav ul li a:hover {
+  color: #009;
+  transform: scale(1.1);
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul li a::after {
+  content: "";
+  position: relative;
+  background-color: #fff;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
+  }
+
+  nav ul li a:hover::after {
+  width: 100%;
+  transition: 0.4s;
+  }
+
+ .content {
+  position: absolute;
+  width: 53%;
+  height: 50vh;
+  bottom: 2%;
+  margin-left: 27%;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 35px;
+  margin-top: 35px;
+}
+
+#odonto {
+  color: #009;
+  text-transform: uppercase;
+ 
+}
+
+#smile, #thebest{
+  color: yellow;
+  text-transform: uppercase;
+}
+
+#woman {
+  width: 600px;
+  left: 68%;
+  position: absolute;
+  top: 0%;
+
+}
+
+footer {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  position: relative;
+  font-size: 12px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+ .contatos{
+  display: inline-block;
+  font-size: 25px;
+  color: #00a7d1;
+  cursor: pointer;
+}
+
+#phone {
+  font-size: 25px;
+  color: #00a7d1;
+  margin: 5px;
+}
+
+#face:hover {
+  transform: scale(1.1);
+}
+
+#insta:hover {
+  transform: scale(1.1);
+}
+
+#whats:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  color: #00a7d1;
+  margin-right: 35px;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* style page sobre - beginning*/
+
+.content-about {
+  position: absolute;
+  width: 80%;
+  height: 50vh;
+  bottom: 36%;
+  margin-left: 17%;
+  text-align: justify;
+}
+
+#photos-about {
+  position: absolute;
+  width: 300px;
+  margin-right: 10%;
+  top: 15%;
+  border-radius: 12px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+}
+
+p {
+  position: absolute;
+  width: 70%;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 29%;
+  bottom: 36%;
+}
+
+.content-about-two {
+  position: absolute;
+  width: 80%;
+  height: 50vh;
+  bottom: 2%;
+  margin-left: 17%;
+  text-align: justify;
+}
+
+/* style page sobre - end*/
+
+/* style page horários - beginning*/
+
+.content-table {
+  display: flex;
+  position: absolute;
+  width: 75%;
+  height: 30vh;
+  bottom: 25%;
+  margin-left: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 75%;
+  height: 35vh;
+  border-collapse: collapse;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+}
+
+table thead tr {
+  background-color: #00a7d1;
+  color: #fff;
+  font-size: 24px; 
+}
+
+tbody tr:nth-child(even) td{
+  background-color: #b0ebfa;
+
+}
+
+table thead tr:nth-child(even) td{
+  background-color: #72dcf7;
+  color: #fff; 
+}
+
+table tbody tr:hover td {
+  background-color: #00cbf8;
+  cursor: pointer;
+}
+
+#table-top {
+  background-color: #009;
+  font-size: 26px;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+#days-week, #serv-clock {
+  text-align: center;
+}
+
+/* style page horários - end*/
+
+/* style page contatos - beginning*/
+
+.content-form {
+  display: flex;
+  position: absolute;
+  width: 25%;
+  height: 25vh;
+  bottom: 30%;
+  margin-left: 25%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+form {
+  width: 100%;
+  height: 56vh;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #00a7d1;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+  color: #fff;  
+}
+
+fieldset {
+  border: none;
+  
+}
+
+legend {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#name,
+#email,
+#subject,
+#message {
+  margin-top: 15px;
+  border-radius: 6px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+
+}
+
+#subject {
+  margin-right: 15px;
+}
+
+#name {
+  margin-right: 5px
+}
+
+#btn-send, #btn-reset {
+  width: 120px;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 5px;
+  text-align: center;
+  margin: 5px 0;
+  color: #00a7d1;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#btn-send:hover {
+  background-color: #4ed3f5;
+  color: #fff;
+  
+}
+
+#btn-reset:hover {
+  background-color: #4ed3f5;
+  color: #fff;
+}
+
+.map {
+  display: flex;
+  position: absolute;
+  width: 25%;
+  height: 50vh;
+  bottom: 14%;
+  margin-left: 65%;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+}
